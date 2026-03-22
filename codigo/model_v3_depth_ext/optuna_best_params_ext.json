@@ -1,0 +1,84 @@
+{
+  "experiment": "depth_extension [8-14]",
+  "baseline_depth": 10,
+  "baseline_val_pr_auc": 0.5976,
+  "baseline_test_pr_auc": 0.5981,
+  "n_trials": 80,
+  "best_trial_number": 32,
+  "best_val_pr_auc": 0.5946,
+  "best_params": {
+    "depth": 9,
+    "learning_rate": 0.027451822285841435,
+    "l2_leaf_reg": 5.826181691524451,
+    "bagging_temperature": 0.3817917504060364,
+    "border_count": 80
+  },
+  "gain_vs_baseline": -0.003,
+  "conclusion": "depth=10 sigue siendo optimo - curva se aplana",
+  "test_results": null,
+  "val_results": null,
+  "model_saved": null,
+  "top5_trials": [
+    {
+      "number": 32,
+      "val_pr_auc": 0.5946,
+      "params": {
+        "depth": 9,
+        "learning_rate": 0.027451822285841435,
+        "l2_leaf_reg": 5.826181691524451,
+        "bagging_temperature": 0.3817917504060364,
+        "border_count": 80
+      },
+      "best_iter": 1094
+    },
+    {
+      "number": 41,
+      "val_pr_auc": 0.5944,
+      "params": {
+        "depth": 9,
+        "learning_rate": 0.029059484132460192,
+        "l2_leaf_reg": 5.621922403263891,
+        "bagging_temperature": 0.3588035254989591,
+        "border_count": 80
+      },
+      "best_iter": 963
+    },
+    {
+      "number": 76,
+      "val_pr_auc": 0.5942,
+      "params": {
+        "depth": 9,
+        "learning_rate": 0.027618671191312814,
+        "l2_leaf_reg": 4.22996534386339,
+        "bagging_temperature": 0.3485461005622778,
+        "border_count": 80
+      },
+      "best_iter": 1072
+    },
+    {
+      "number": 27,
+      "val_pr_auc": 0.5941,
+      "params": {
+        "depth": 9,
+        "learning_rate": 0.0313931403312278,
+        "l2_leaf_reg": 8.340246823371507,
+        "bagging_temperature": 0.26335343300307823,
+        "border_count": 80
+      },
+      "best_iter": 961
+    },
+    {
+      "number": 61,
+      "val_pr_auc": 0.5941,
+      "params": {
+        "depth": 9,
+        "learning_rate": 0.022869288656985787,
+        "l2_leaf_reg": 4.723219786470502,
+        "bagging_temperature": 0.2629184390336802,
+        "border_count": 96
+      },
+      "best_iter": 1180
+    }
+  ],
+  "elapsed_total_min": 319.5
+}
