@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "val_pr_auc": 0.5976,
+    "test_pr_auc": 0.5981,
+    "test_auc_roc": 0.8833,
+    "test_ks": 0.6202
+  },
+  "grid": [
+    {
+      "depth": 8,
+      "val_pr_auc": 0.5926,
+      "val_auc_roc": 0.8823,
+      "best_iter": 659,
+      "delta_pr_vs_baseline": -0.005,
+      "is_baseline": false
+    },
+    {
+      "depth": 9,
+      "val_pr_auc": 0.5932,
+      "val_auc_roc": 0.8822,
+      "best_iter": 480,
+      "delta_pr_vs_baseline": -0.0044,
+      "is_baseline": false
+    },
+    {
+      "depth": 10,
+      "val_pr_auc": 0.5919,
+      "val_auc_roc": 0.8819,
+      "best_iter": 381,
+      "delta_pr_vs_baseline": -0.0057,
+      "is_baseline": true
+    },
+    {
+      "depth": 11,
+      "val_pr_auc": 0.5912,
+      "val_auc_roc": 0.8815,
+      "best_iter": 283,
+      "delta_pr_vs_baseline": -0.0064,
+      "is_baseline": false
+    },
+    {
+      "depth": 12,
+      "val_pr_auc": 0.5893,
+      "val_auc_roc": 0.8807,
+      "best_iter": 216,
+      "delta_pr_vs_baseline": -0.0083,
+      "is_baseline": false
+    },
+    {
+      "depth": 13,
+      "val_pr_auc": 0.5874,
+      "val_auc_roc": 0.8804,
+      "best_iter": 128,
+      "delta_pr_vs_baseline": -0.0102,
+      "is_baseline": false
+    },
+    {
+      "depth": 14,
+      "val_pr_auc": 0.5842,
+      "val_auc_roc": 0.8788,
+      "best_iter": 130,
+      "delta_pr_vs_baseline": -0.0134,
+      "is_baseline": false
+    }
+  ]
+}
