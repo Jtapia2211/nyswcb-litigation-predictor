@@ -1,0 +1,134 @@
+{
+  "model_version": "v3_full",
+  "target_definition": "Litigated AND claim_injury_type in {TEMPORARY, NON-COMP, MED ONLY}",
+  "n_positive": 240223,
+  "n_negative": 1352696,
+  "prevalence": 0.1508,
+  "scale_pos_weight": 5.631,
+  "best_params": {
+    "iterations": 1511,
+    "depth": 10,
+    "learning_rate": 0.061,
+    "l2_leaf_reg": 7.62,
+    "bagging_temperature": 0.792,
+    "border_count": 82,
+    "loss_function": "Logloss",
+    "eval_metric": "PRAUC",
+    "scale_pos_weight": 5.631,
+    "random_seed": 42,
+    "verbose": 100,
+    "early_stopping_rounds": 100,
+    "allow_writing_files": false
+  },
+  "best_params_note": "Optuna trial #22, Cap.6 \u2014 applied to v3 target",
+  "val_2021": {
+    "auc_roc": 0.8839,
+    "pr_auc": 0.5976,
+    "ks": 0.6149,
+    "brier": 0.1444,
+    "precision": 0.5136,
+    "recall": 0.6717,
+    "f1": 0.5821,
+    "threshold": 0.6903,
+    "tp": 25433,
+    "fp": 24083,
+    "fn": 12428,
+    "tn": 178954
+  },
+  "test_2022": {
+    "auc_roc": 0.8833,
+    "pr_auc": 0.5981,
+    "ks": 0.6202,
+    "brier": 0.1507,
+    "precision": 0.5189,
+    "recall": 0.6781,
+    "f1": 0.5879,
+    "threshold": 0.7084,
+    "tp": 27903,
+    "fp": 25868,
+    "fn": 13245,
+    "tn": 193140
+  },
+  "features": [
+    "days_to_assembly",
+    "days_C2_to_accident",
+    "days_C3_to_accident",
+    "age_at_injury",
+    "aww",
+    "has_C2",
+    "has_C3",
+    "has_ANCR_early",
+    "accident_year",
+    "accident_month",
+    "accident_dow",
+    "gender",
+    "accident_type",
+    "occupational_disease",
+    "county_of_injury",
+    "medical_fee_region",
+    "wcio_cause_code",
+    "wcio_nature_code",
+    "wcio_body_code",
+    "carrier_type",
+    "district_name",
+    "industry_code",
+    "industry_desc"
+  ],
+  "cat_features": [
+    "gender",
+    "accident_type",
+    "occupational_disease",
+    "county_of_injury",
+    "medical_fee_region",
+    "wcio_cause_code",
+    "wcio_nature_code",
+    "wcio_body_code",
+    "carrier_type",
+    "district_name",
+    "industry_code",
+    "industry_desc"
+  ],
+  "top10_feature_importance": [
+    [
+      "aww",
+      19.76752756328766
+    ],
+    [
+      "has_C3",
+      10.390254479439312
+    ],
+    [
+      "wcio_body_code",
+      7.060519765221761
+    ],
+    [
+      "carrier_type",
+      6.773313167255449
+    ],
+    [
+      "wcio_nature_code",
+      6.497918344412938
+    ],
+    [
+      "age_at_injury",
+      6.002133449419208
+    ],
+    [
+      "wcio_cause_code",
+      5.656074013215755
+    ],
+    [
+      "industry_desc",
+      5.5409138525089565
+    ],
+    [
+      "days_to_assembly",
+      4.211413235920093
+    ],
+    [
+      "days_C2_to_accident",
+      4.160923619954251
+    ]
+  ],
+  "training_time_min": 5.0
+}
