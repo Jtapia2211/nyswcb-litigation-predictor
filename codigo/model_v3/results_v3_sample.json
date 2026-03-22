@@ -1,0 +1,35 @@
+{
+  "note": "MUESTRA VM \u2014 resultados indicativos, no definitivos",
+  "target_definition": "Litigated AND claim_injury_type in {TEMPORARY, NON-COMP, MED ONLY}",
+  "n_pos_total": 240223,
+  "n_neg_total": 1352696,
+  "prevalence": 0.1508,
+  "val_2021": {
+    "auc_roc": 0.8806,
+    "pr_auc": 0.5862,
+    "ks": 0.6113,
+    "brier": 0.1484,
+    "precision": 0.5096,
+    "recall": 0.6598,
+    "f1": 0.575,
+    "threshold": 0.7045,
+    "tp": 24980,
+    "fp": 24042,
+    "fn": 12881,
+    "tn": 178995
+  },
+  "test_2022": {
+    "auc_roc": 0.8812,
+    "pr_auc": 0.5907,
+    "ks": 0.6178,
+    "brier": 0.153,
+    "precision": 0.5143,
+    "recall": 0.6767,
+    "f1": 0.5844,
+    "threshold": 0.7136,
+    "tp": 27845,
+    "fp": 26296,
+    "fn": 13303,
+    "tn": 192712
+  }
+}
