@@ -1,0 +1,288 @@
+{
+  "sample_5050": {
+    "n_pos": 4000,
+    "n_neg": 4000,
+    "prevalence": 0.5,
+    "base_value_logodds": -0.1305,
+    "base_value_prob": 0.4674,
+    "top15": [
+      {
+        "rank": 1,
+        "feature": "wcio_body_code",
+        "mean_abs_shap": 0.5012
+      },
+      {
+        "rank": 2,
+        "feature": "has_C3",
+        "mean_abs_shap": 0.4318
+      },
+      {
+        "rank": 3,
+        "feature": "aww",
+        "mean_abs_shap": 0.3947
+      },
+      {
+        "rank": 4,
+        "feature": "wcio_nature_code",
+        "mean_abs_shap": 0.3261
+      },
+      {
+        "rank": 5,
+        "feature": "carrier_type",
+        "mean_abs_shap": 0.1816
+      },
+      {
+        "rank": 6,
+        "feature": "wcio_cause_code",
+        "mean_abs_shap": 0.1543
+      },
+      {
+        "rank": 7,
+        "feature": "industry_desc",
+        "mean_abs_shap": 0.1207
+      },
+      {
+        "rank": 8,
+        "feature": "age_at_injury",
+        "mean_abs_shap": 0.1035
+      },
+      {
+        "rank": 9,
+        "feature": "days_C2_to_accident",
+        "mean_abs_shap": 0.0927
+      },
+      {
+        "rank": 10,
+        "feature": "industry_code",
+        "mean_abs_shap": 0.0741
+      },
+      {
+        "rank": 11,
+        "feature": "days_to_assembly",
+        "mean_abs_shap": 0.0688
+      },
+      {
+        "rank": 12,
+        "feature": "county_of_injury",
+        "mean_abs_shap": 0.0633
+      },
+      {
+        "rank": 13,
+        "feature": "district_name",
+        "mean_abs_shap": 0.0607
+      },
+      {
+        "rank": 14,
+        "feature": "accident_year",
+        "mean_abs_shap": 0.0554
+      },
+      {
+        "rank": 15,
+        "feature": "medical_fee_region",
+        "mean_abs_shap": 0.0528
+      }
+    ]
+  },
+  "sample_prod": {
+    "n_pos": 32,
+    "n_neg": 168,
+    "prevalence": 0.1582,
+    "base_value_logodds": -0.1305,
+    "base_value_prob": 0.4674,
+    "top15": [
+      {
+        "rank": 1,
+        "feature": "has_C3",
+        "mean_abs_shap": 0.4268
+      },
+      {
+        "rank": 2,
+        "feature": "aww",
+        "mean_abs_shap": 0.4253
+      },
+      {
+        "rank": 3,
+        "feature": "wcio_body_code",
+        "mean_abs_shap": 0.4097
+      },
+      {
+        "rank": 4,
+        "feature": "wcio_nature_code",
+        "mean_abs_shap": 0.3527
+      },
+      {
+        "rank": 5,
+        "feature": "carrier_type",
+        "mean_abs_shap": 0.1801
+      },
+      {
+        "rank": 6,
+        "feature": "wcio_cause_code",
+        "mean_abs_shap": 0.1623
+      },
+      {
+        "rank": 7,
+        "feature": "age_at_injury",
+        "mean_abs_shap": 0.1353
+      },
+      {
+        "rank": 8,
+        "feature": "industry_desc",
+        "mean_abs_shap": 0.1109
+      },
+      {
+        "rank": 9,
+        "feature": "days_C2_to_accident",
+        "mean_abs_shap": 0.0957
+      },
+      {
+        "rank": 10,
+        "feature": "days_to_assembly",
+        "mean_abs_shap": 0.079
+      },
+      {
+        "rank": 11,
+        "feature": "industry_code",
+        "mean_abs_shap": 0.0631
+      },
+      {
+        "rank": 12,
+        "feature": "county_of_injury",
+        "mean_abs_shap": 0.0604
+      },
+      {
+        "rank": 13,
+        "feature": "district_name",
+        "mean_abs_shap": 0.0562
+      },
+      {
+        "rank": 14,
+        "feature": "gender",
+        "mean_abs_shap": 0.0468
+      },
+      {
+        "rank": 15,
+        "feature": "medical_fee_region",
+        "mean_abs_shap": 0.0465
+      }
+    ]
+  },
+  "comparison": [
+    {
+      "rank_5050": 1,
+      "feature_5050": "wcio_body_code",
+      "mean_abs_shap_5050": 0.5012,
+      "rank_prod": 3,
+      "delta_rank": 2
+    },
+    {
+      "rank_5050": 2,
+      "feature_5050": "has_C3",
+      "mean_abs_shap_5050": 0.4318,
+      "rank_prod": 1,
+      "delta_rank": -1
+    },
+    {
+      "rank_5050": 3,
+      "feature_5050": "aww",
+      "mean_abs_shap_5050": 0.3947,
+      "rank_prod": 2,
+      "delta_rank": -1
+    },
+    {
+      "rank_5050": 4,
+      "feature_5050": "wcio_nature_code",
+      "mean_abs_shap_5050": 0.3261,
+      "rank_prod": 4,
+      "delta_rank": 0
+    },
+    {
+      "rank_5050": 5,
+      "feature_5050": "carrier_type",
+      "mean_abs_shap_5050": 0.1816,
+      "rank_prod": 5,
+      "delta_rank": 0
+    },
+    {
+      "rank_5050": 6,
+      "feature_5050": "wcio_cause_code",
+      "mean_abs_shap_5050": 0.1543,
+      "rank_prod": 6,
+      "delta_rank": 0
+    },
+    {
+      "rank_5050": 7,
+      "feature_5050": "industry_desc",
+      "mean_abs_shap_5050": 0.1207,
+      "rank_prod": 8,
+      "delta_rank": 1
+    },
+    {
+      "rank_5050": 8,
+      "feature_5050": "age_at_injury",
+      "mean_abs_shap_5050": 0.1035,
+      "rank_prod": 7,
+      "delta_rank": -1
+    },
+    {
+      "rank_5050": 9,
+      "feature_5050": "days_C2_to_accident",
+      "mean_abs_shap_5050": 0.0927,
+      "rank_prod": 9,
+      "delta_rank": 0
+    },
+    {
+      "rank_5050": 10,
+      "feature_5050": "industry_code",
+      "mean_abs_shap_5050": 0.0741,
+      "rank_prod": 11,
+      "delta_rank": 1
+    },
+    {
+      "rank_5050": 11,
+      "feature_5050": "days_to_assembly",
+      "mean_abs_shap_5050": 0.0688,
+      "rank_prod": 10,
+      "delta_rank": -1
+    },
+    {
+      "rank_5050": 12,
+      "feature_5050": "county_of_injury",
+      "mean_abs_shap_5050": 0.0633,
+      "rank_prod": 12,
+      "delta_rank": 0
+    },
+    {
+      "rank_5050": 13,
+      "feature_5050": "district_name",
+      "mean_abs_shap_5050": 0.0607,
+      "rank_prod": 13,
+      "delta_rank": 0
+    },
+    {
+      "rank_5050": 14,
+      "feature_5050": "accident_year",
+      "mean_abs_shap_5050": 0.0554,
+      "rank_prod": 17,
+      "delta_rank": 3
+    },
+    {
+      "rank_5050": 15,
+      "feature_5050": "medical_fee_region",
+      "mean_abs_shap_5050": 0.0528,
+      "rank_prod": 15,
+      "delta_rank": 0
+    }
+  ],
+  "conclusion": {
+    "max_rank_shift_top10": 2,
+    "features_entering_top10": [
+      "days_to_assembly"
+    ],
+    "features_leaving_top10": [
+      "industry_code"
+    ],
+    "material_change": true,
+    "update_section_7_2": true
+  }
+}
