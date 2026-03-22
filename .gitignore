@@ -1,0 +1,33 @@
+# ─── Datos crudos (descargar del NYSWCB) ─────────────────────────────────────
+raw_data/
+*.csv
+*.parquet
+
+# ─── Modelos entrenados (archivos grandes) ────────────────────────────────────
+codigo/model_v3/*.cbm
+codigo/model_v3_depth_ext/
+codigo/tuning_catboost/
+
+# ─── Documentos compilados ────────────────────────────────────────────────────
+*.docx
+*.pdf
+
+# ─── Figuras generadas ────────────────────────────────────────────────────────
+raw_data/*.png
+codigo/*.png
+
+# ─── Python / entorno ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# ─── Node / JS ────────────────────────────────────────────────────────────────
+node_modules/
+*.log
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
