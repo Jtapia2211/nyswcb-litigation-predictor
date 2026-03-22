@@ -1,0 +1,213 @@
+{
+  "model": "catboost_v3_full.cbm",
+  "threshold": 0.708,
+  "test_year": 2022,
+  "test_n": 260156,
+  "eeoc_rule": "4/5: ratio < 0.80 o > 1.25 indica disparidad",
+  "disparidades_detectadas": [
+    "TPR AWW Q5/Q1 (ratio=0.742)"
+  ],
+  "gender": {
+    "referencia": "M",
+    "grupos": {
+      "M": {
+        "group": "M",
+        "n": 147481,
+        "n_pos": 25752,
+        "prevalence": 0.1746,
+        "TPR": 0.6789,
+        "Precision": 0.536,
+        "FPR": 0.1243,
+        "FNR": 0.3211,
+        "FDR": 0.464,
+        "TP": 17482,
+        "FP": 15136,
+        "FN": 8270,
+        "TN": 106593
+      },
+      "F": {
+        "group": "F",
+        "n": 110055,
+        "n_pos": 15153,
+        "prevalence": 0.1377,
+        "TPR": 0.681,
+        "Precision": 0.4916,
+        "FPR": 0.1124,
+        "FNR": 0.319,
+        "FDR": 0.5084,
+        "TP": 10319,
+        "FP": 10670,
+        "FN": 4834,
+        "TN": 84232
+      }
+    },
+    "ratios_F_vs_M": {
+      "Equal_Opportunity_TPR": 1.0031,
+      "Predictive_Parity_Prec": 0.9172,
+      "FPR_ratio": 0.9043
+    },
+    "flags": {
+      "Equal_Opportunity": "OK (1.00)",
+      "Predictive_Parity": "OK (0.92)"
+    }
+  },
+  "aww_quintiles": {
+    "n_con_aww_conocido": 76496,
+    "mediana_aww": 1101.11,
+    "limites_quintiles": [
+      13.94,
+      657.07,
+      938.25,
+      1293.25,
+      1767.36,
+      1297304.0
+    ],
+    "grupos": {
+      "Q1 (bajo)": {
+        "group": "Q1 (bajo)",
+        "n": 15300,
+        "n_pos": 7037,
+        "prevalence": 0.4599,
+        "TPR": 0.8552,
+        "Precision": 0.5838,
+        "FPR": 0.5193,
+        "FNR": 0.1448,
+        "FDR": 0.4162,
+        "TP": 6018,
+        "FP": 4291,
+        "FN": 1019,
+        "TN": 3972
+      },
+      "Q2": {
+        "group": "Q2",
+        "n": 15299,
+        "n_pos": 6524,
+        "prevalence": 0.4264,
+        "TPR": 0.8012,
+        "Precision": 0.5626,
+        "FPR": 0.463,
+        "FNR": 0.1988,
+        "FDR": 0.4374,
+        "TP": 5227,
+        "FP": 4063,
+        "FN": 1297,
+        "TN": 4712
+      },
+      "Q3": {
+        "group": "Q3",
+        "n": 15299,
+        "n_pos": 6210,
+        "prevalence": 0.4059,
+        "TPR": 0.7549,
+        "Precision": 0.5461,
+        "FPR": 0.4288,
+        "FNR": 0.2451,
+        "FDR": 0.4539,
+        "TP": 4688,
+        "FP": 3897,
+        "FN": 1522,
+        "TN": 5192
+      },
+      "Q4": {
+        "group": "Q4",
+        "n": 15299,
+        "n_pos": 5248,
+        "prevalence": 0.343,
+        "TPR": 0.7266,
+        "Precision": 0.4948,
+        "FPR": 0.3873,
+        "FNR": 0.2734,
+        "FDR": 0.5052,
+        "TP": 3813,
+        "FP": 3893,
+        "FN": 1435,
+        "TN": 6158
+      },
+      "Q5 (alto)": {
+        "group": "Q5 (alto)",
+        "n": 15299,
+        "n_pos": 4786,
+        "prevalence": 0.3128,
+        "TPR": 0.6346,
+        "Precision": 0.4693,
+        "FPR": 0.3266,
+        "FNR": 0.3654,
+        "FDR": 0.5307,
+        "TP": 3037,
+        "FP": 3434,
+        "FN": 1749,
+        "TN": 7079
+      }
+    },
+    "ratios_Q5_vs_Q1": {
+      "Equal_Opportunity_TPR": 0.742,
+      "Predictive_Parity_Prec": 0.8039
+    },
+    "flags": {
+      "Equal_Opportunity": "\u26a0 DISPARIDAD (0.74 < 0.80)",
+      "Predictive_Parity": "OK (0.80)"
+    }
+  },
+  "interseccionalidad": {
+    "M_AWW_bajo": {
+      "group": "M_AWW_bajo",
+      "n": 21634,
+      "n_pos": 9616,
+      "prevalence": 0.4445,
+      "TPR": 0.8127,
+      "Precision": 0.5977,
+      "FPR": 0.4377,
+      "FNR": 0.1873,
+      "FDR": 0.4023,
+      "TP": 7815,
+      "FP": 5260,
+      "FN": 1801,
+      "TN": 6758
+    },
+    "M_AWW_alto": {
+      "group": "M_AWW_alto",
+      "n": 26569,
+      "n_pos": 8800,
+      "prevalence": 0.3312,
+      "TPR": 0.6725,
+      "Precision": 0.5057,
+      "FPR": 0.3255,
+      "FNR": 0.3275,
+      "FDR": 0.4943,
+      "TP": 5918,
+      "FP": 5784,
+      "FN": 2882,
+      "TN": 11985
+    },
+    "F_AWW_bajo": {
+      "group": "F_AWW_bajo",
+      "n": 16342,
+      "n_pos": 7041,
+      "prevalence": 0.4309,
+      "TPR": 0.8223,
+      "Precision": 0.5367,
+      "FPR": 0.5375,
+      "FNR": 0.1777,
+      "FDR": 0.4633,
+      "TP": 5790,
+      "FP": 4999,
+      "FN": 1251,
+      "TN": 4302
+    },
+    "F_AWW_alto": {
+      "group": "F_AWW_alto",
+      "n": 11412,
+      "n_pos": 4179,
+      "prevalence": 0.3662,
+      "TPR": 0.7557,
+      "Precision": 0.4774,
+      "FPR": 0.4779,
+      "FNR": 0.2443,
+      "FDR": 0.5226,
+      "TP": 3158,
+      "FP": 3457,
+      "FN": 1021,
+      "TN": 3776
+    }
+  }
+}
